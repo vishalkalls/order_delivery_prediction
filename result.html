@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Order Delivery Prediction Result</h2>
+        <p><strong>Prediction:</strong> {% if prediction == 1 %}✅ The order will be delivered successfully!{% else %}❌ The order might not be delivered on time.{% endif %}</p>
+        
+        <br>
+        <a href="/">⬅️ Go Back to Home</a>
+    </div>
+</body>
+</html>
